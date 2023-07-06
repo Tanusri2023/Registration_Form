@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="contact" action="" method="post">
+            <h1>Registration Form</h1>
+            <H3>Fill the for below and press the submit button!</H3>
+            <div class="row">
+
+                <!-- First Column -->
+                <div class="column">
+                    <fieldset>
+                        <input type="text" placeholder="Full Name" name="Name" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Father Name" name="fName" required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Date of Birth" name="Date" onfocus="(this.type = 'date')"
+                            required autofocus>
+                    </fieldset>
+                    <fieldset>
+                        <input type="text" placeholder="Phone Number" name="Phone" id="Phone" required autofocus>
+                    </fieldset>
+                </div>
+
+                <!-- Second Column -->
+
+                <div class="column">
+                    <fieldset>
+                        <p>What is your gender?</p>
+                        <div class="radio">
+                            <input type="radio" id="male" name="gender" required>
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="female" name="gender" required>
+                            <label for="female">Female</label>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <label for="idcard">Enter your id card in given format.</label>
+                        <div class="idcard">
+                            <input type="text" name="idcard" pattern="[0-9]{5}" placeholder="#####" maxlength="5"
+                                required> -
+                            <input type="text" name="idcard" pattern="[0-9]{5}" placeholder="#######" maxlength="7"
+                                required> -
+                            <input type="text" name="idcard" pattern="[0-9]{5}" placeholder="#" maxlength="1" required>
+
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <p>Upload Your Resume</p>
+                        <input type="file" id="file" required>
+
+                    </fieldset>
+                </div>
+            </div>
+
+            <!-- Submit Button  -->
+            <fieldset>
+                <button type="submit" id="button">Submit Now</button>
+            </fieldset>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
